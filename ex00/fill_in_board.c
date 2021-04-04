@@ -6,7 +6,7 @@
 /*   By: jinyoo <jinyoo@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/04 12:39:30 by jinyoo            #+#    #+#             */
-/*   Updated: 2021/04/04 15:07:29 by jinyoo           ###   ########.fr       */
+/*   Updated: 2021/04/04 16:34:12 by slee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,10 @@ void	solution_row(int x, int y, int h)
 	if (g_board[y][x] == '0')
 	{
 		if (!is_valid_box_height(x, y, h))
-			solution(x, y, h + 1);
+			solution_row(x, y, h + 1);    //ret 0
 		else
 		{
-			board[y][x] = '0' + h;
+			board[y][x] = '0' + h;        //ret 1
 			*g_check++ = h;
 		}
 	}

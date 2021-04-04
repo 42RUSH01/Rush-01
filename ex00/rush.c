@@ -6,7 +6,7 @@
 /*   By: jinyoo <jinyoo@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/02 20:42:06 by jinyoo            #+#    #+#             */
-/*   Updated: 2021/04/04 14:55:54 by jinyoo           ###   ########.fr       */
+/*   Updated: 2021/04/04 16:42:31 by slee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int		is_one_to_four(char c);
 int		is_blank_null(char c);
 void	set_board(char *c_up, char *c_down, char *r_left, char *r_right);
-void	fill_in_board();
+//void	fill_in_board();
 
 char g_numbers[17];
 char g_column_up[4];
@@ -62,5 +62,5 @@ void	rush(char *views)
 {
 	divide_views(views);
 	set_board(g_column_up, g_column_down, g_row_left, g_row_right);
-	fill_in_board();
+	//fill_in_board();
 }
